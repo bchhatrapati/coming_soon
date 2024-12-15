@@ -3,63 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coming Soon</title>
+    <title>ChalaFirale - Launching Soon</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-align: center;
-            color: #333;
         }
+
         .container {
-            background-color: #ffffff;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             max-width: 400px;
+            background: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
-        h1 {
-            font-size: 2.8rem;
-            color: #ff7043;
-            margin-bottom: 20px;
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .coming-soon {
-            font-size: 1.4rem;
-            color: #ff7043;
-            font-weight: bold;
-        }
-        .tiger-img {
-            margin-top: 30px;
-        }
+
         img {
-            width: 120px;
+            width: 100%;
             height: auto;
-            border-radius: 50%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ff7b00;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888888;
+        }
+
+        .progress-bar {
+            height: 12px;
+            width: 100%;
+            background-color: #eee;
+            border-radius: 6px;
+            margin-top: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            width: 70%;
+            height: 100%;
+            background-color: #ff7b00;
+            animation: progressAnim 3s infinite;
+        }
+
+        @keyframes progressAnim {
+            0% { width: 0; }
+            100% { width: 70%; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Coming Soon!</h1>
-        <p>Our website is under construction. We're working hard to bring you something amazing.</p>
-        <p class="coming-soon">Stay Tuned!</p>
-        <div class="tiger-img">
-            <img src="https://i.pinimg.com/originals/5c/a2/5b/5ca25b51f163c7c9a788b55089e0b4f4.jpg" alt="Cute Small Tiger">
+        <img src="file:///D:/Downloads/Under%20Construction.webp" alt="Cute Tiger Constructing Website" />
+        <h1>Launching Soon</h1>
+        <h2>Website is under construction</h2>
+        <div class="progress-bar">
+            <div class="progress"></div>
         </div>
+        <div class="footer">Stay tuned for something amazing!</div>
     </div>
-
 </body>
 </html>
