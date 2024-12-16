@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChalaFirale | Launching Soon</title>
-    <meta name="description" content="We are launching an exciting tour management website for Tadoba Andheri Tiger Reserve. Stay tuned!">
-<style>
+    <title>ChalaFirale - Launching Soon</title>
+    <style>
         body {
             margin: 0;
             padding: 0;
@@ -44,13 +43,32 @@
             font-size: 32px;
             color: #ff7b00;
             margin-bottom: 10px;
-            animation: fadeIn 2s ease-in-out infinite alternate;
+            animation: fadeInOut 2s infinite alternate;
         }
 
         h2 {
             font-size: 22px;
             color: #333333;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .circular-loader {
+            margin: 20px auto;
+            width: 80px;
+            height: 80px;
+            border: 8px solid #ebedee; /* Background of the circle */
+            border-top: 8px solid #ff7b00; /* Progress color */
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .footer {
@@ -58,40 +76,17 @@
             font-size: 14px;
             color: #888888;
         }
-
-        .progress-bar {
-            height: 12px;
-            width: 100%;
-            background-color: #eee;
-            border-radius: 6px;
-            margin-top: 10px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .progress {
-            width: 70%;
-            height: 100%;
-            background-color: #ff7b00;
-            animation: progressAnim 3s infinite;
-        }
-
-        @keyframes progressAnim {
-            0% { width: 0; }
-            100% { width: 70%; }
-            0% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="Under Construction.webp" alt="Cute Tiger Constructing Website" />
+        <img src="file:///D:/Downloads/Under%20Construction.webp" alt="Cute Tiger Constructing Website" />
         <h1>Launching Soon</h1>
         <h2>Website is under construction</h2>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
+
+        <!-- Circular Progress -->
+        <div class="circular-loader"></div>
+
         <div class="footer">Stay tuned for something amazing!</div>
     </div>
 </body>
